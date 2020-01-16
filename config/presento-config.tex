@@ -1,0 +1,35 @@
+\usepackage{polyglossia}
+\setdefaultlanguage{spanish}
+
+% Sets the background color to be light gray and the default text color to be heavy dark gray.
+% Recommended for presenting with high quality projectors, since the high contrast of black-white is not advisable
+\setbeamercolor{background canvas}{bg=colorlgray}
+\setbeamercolor{normal text}{fg=colorhgray}
+
+
+% personal data
+\newcommand{\myTitle}{\color{colororange}\hugetext{AUTOENCODERS\\}{\notosansfont\largetext{teoría, herramientas y casos prácticos}}}
+\newcommand{\myName}{\largetext{\color{colorblue}{David Charte}}\\\vspace{1em}%
+\includegraphics[height=2em]{images/ugrhoriz.png}%
+\hspace{1em}%
+\includegraphics[height=2em]{images/sci2s.png}}
+\newcommand{\myDetails}{\setnote{18 de diciembre de 2019}}
+
+%sty file
+\usepackage{config/presento}
+
+% custom command and packages
+\input{config/custom-command}
+
+\usetikzlibrary{shapes.misc, positioning, shapes.multipart, arrows.meta}
+\tikzset{
+    layer/.style={
+        draw, 
+        rectangle split,
+        minimum width=2cm,
+        rectangle split parts=3, 
+        rectangle split part fill={black!10,white,black!10},
+        rounded corners,
+        inner sep=5pt,
+    }
+}
